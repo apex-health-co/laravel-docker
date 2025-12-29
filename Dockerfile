@@ -4,7 +4,7 @@ LABEL maintainer="David Cumberland <hi@davecodes.au>"
 
 # Install required libraries and binaries
 RUN apt update -y && \
-    apt install -y libxml2-dev zlib1g-dev libpng-dev libmcrypt-dev libzip-dev libxslt-dev libcurl4-openssl-dev libssl-dev
+    apt install -y libxml2-dev zlib1g-dev libpng-dev libmcrypt-dev libzip-dev libxslt-dev libcurl4-openssl-dev libssl-dev libicu-dev
 
 # Install composer from container
 COPY --from=composer:lts /usr/bin/composer /usr/local/bin/composer
